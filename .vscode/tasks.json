@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build sfml game",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "main.cpp",
+        "-IC:/SFML-2.5.1/include",
+        "-LC:/SFML-2.5.1/lib",
+        "-lsfml-graphics",
+        "-lsfml-window",
+        "-lsfml-system",
+        "-o",
+        "game.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
